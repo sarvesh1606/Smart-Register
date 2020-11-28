@@ -1,5 +1,5 @@
 # Smart-Register
-Flexible python code for user authentication and SignUp/Login page with the features like email confirmation and all basic validations. All the user data is serialized with REST APIs. It can be deployed on any web application.
+Flexible python code for user authentication and SignUp/Login page with the features like email confirmation and all basic validations. All the user data is serialized with REST APIs. It is deployable to any web application.
 
 ## - A Django application
 
