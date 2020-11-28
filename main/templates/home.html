@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+
+{% block main %}
+<!--<section class="jumbotron text-center">
+    <div class="container">
+      <h1 class="jumbotron-heading">Welcome to home page!{{Signup.name}} </h1>
+
+    </div>
+</section>-->
+<!--<section>
+    <div class="container">
+        <h1 class="text-center">Recent eBooks</h1>
+        <div class="row">
+            {% for oneuser in allusers %}
+            <div class="col-md-3">
+                <a href="{% url 'oneuser' oneuser.id %}">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">{{ oneuser.name }}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>-->
+<!--<section>-->
+    <!--<div class="container">-->
+<div class="container">
+    <br>
+  <h2>All user forms</h2>          
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Date of Birth</th>
+        <th>Email</th>
+        <th>Phone no.</th>
+      </tr>
+    </thead>
+            {% for oneuser in allusers %}
+            <!--<div class="col-md-3">-->
+                <!--<a href="{% url 'oneuser' oneuser.id %}">-->
+                    <tbody>
+                    <tr>
+                        <td>{{oneuser.name}}</td>
+                        <td>{{oneuser.dob}}</td>
+                        <td>{{oneuser.email}}</td>
+                        <td>{{oneuser.phone}}</td>
+                    </tr>
+                    </tbody>
+                <!--</a>-->
+            <!--</div>-->
+            {% endfor %}
+
+        </table>
+        </div>
+        <!--</div>
+    </div>
+</section>-->
+
+{% endblock main %}
